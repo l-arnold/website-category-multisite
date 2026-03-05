@@ -1,7 +1,8 @@
-# odoo-website-category-multisite
-Fix category hiding for multi-website Odoo installations
+# website-category-multisite
+Module 1:  Fix category hiding for multi-website Odoo installations
+Other modules may be added to this repository in the future
 
-# Odoo Website Category Multi-Site Fix
+# Website Category Multi-Site Fix
 
 Fixes category visibility for multi-website, multi-company Odoo 14 installations.
 
