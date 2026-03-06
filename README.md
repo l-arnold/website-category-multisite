@@ -44,16 +44,12 @@ This module:
 ## License
 
 LGPL-3.0
+
+## Copyright
+
+Landis Arnold
+Nomadic, Inc
+2026
 ```
 
 ---
-
-## **Step 4: Commit and Push**
-
-**In GitHub Desktop:**
-```
-1. You'll see all new files listed
-2. Summary: "Initial commit - Category visibility fix"
-3. Description: "Multi-website category hiding module with materialized view"
-4. Click "Commit to main"
-5. Click "Push origin"
