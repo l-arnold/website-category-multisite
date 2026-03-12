@@ -34,6 +34,9 @@ LEFT JOIN product_public_category_product_template_rel rel
 LEFT JOIN product_template pt 
     ON pt.id = rel.product_template_id
     AND pt.active = TRUE
+    -- Check single website_id field (takes precedence)
+    AND (pt.website_id = w.id OR pt.website_id IS NULL)
+    -- Check multi-website assignments
     AND (
         EXISTS (
             SELECT 1 FROM product_template2website_rel ptw

@@ -50,10 +50,13 @@ BEGIN
     END IF;
 
     -- Compute visible websites
-    SELECT string_agg(DISTINCT w.name, ', ' ORDER BY w.name)
-    INTO website_list
-    FROM website w
-    WHERE NEW.is_published = TRUE
+	SELECT string_agg(DISTINCT w.name, ', ' ORDER BY w.name)
+		INTO website_list
+		FROM website w
+		WHERE NEW.is_published = TRUE
+      -- Single website_id field check (takes precedence if set)
+      AND (NEW.website_id = w.id OR NEW.website_id IS NULL)
+      -- Company assignment check
       AND (
           EXISTS (
               SELECT 1 
