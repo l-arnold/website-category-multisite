@@ -8,7 +8,7 @@ Fixes category visibility for multi-website, multi-company Odoo 14 installations
 
 ## Problem
 
-The OCA `website_sale_hide_empty_category` module only checks if categories have products *anywhere*, not if they have products on the *current website*.
+The OCA `website_sale_hide_empty_category` module only checks if categories have products *anywhere*, not if they have products on the *current website*.  This means that Categories will display in the tree of Websites where no products are configured to show on that specific website.  
 
 ## Solution
 
